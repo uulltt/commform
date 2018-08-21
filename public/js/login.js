@@ -52,7 +52,7 @@ function signup()
 function createAccount()
 {
      //   Initialize url.
-     var url_signup = 'https://group9-tankgame.herokuapp.com/signup';
+     var url_signup = 'https://commform.herokuapp.com/signup';
 
      //   Initialize userdata
      let userdata = {
@@ -60,12 +60,13 @@ function createAccount()
           username: $('#user-signup').val(),
 	  password: $('#password-signup').val()
      }
-
+if (userdata.username.length > 0 && userdata.username.toLowerCase() == userdata.username.toLowerCase().match(/[a-z0-9_-]+/gm) && userdata.password.length > 0 && userdata.email.includes('@') && userdata.email.includes('.') && userdata.email.length > 0){
      $.post("/signup", userdata, function (res, status) {
           console.log(status);
      }).fail(function() {
           alert("signup failed");
      });
+}
 
      //   Clear all text fields.
      clearText('email');

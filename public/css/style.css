@@ -332,6 +332,7 @@ select option:hover{
 }
 
 .log-in{
+	display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;

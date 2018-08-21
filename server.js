@@ -60,7 +60,7 @@ app.use(function (req, res, next) {
 	}
 });
 app.use(function (req, res, next) {
-	console.log(req.session.userid);
+	//console.log(req.session.userid);
 	if (checkInput(req.body)) {
 		res.status(400).send();
 	} else {
@@ -101,7 +101,7 @@ app.get('/login', function (req, res) {
 
 app.post('/login', function (req, response) {
 	console.log("receiving login info:");
-	if (req.body.username > 50 ||
+	if (req.body.username > 50 || req.body.username < 1 || req.body.password < 1 || req.body.email < 1 ||
 		checkInput(req.body)) {
 		response.status(400).send();
 	} else {

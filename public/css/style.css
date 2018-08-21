@@ -25,7 +25,7 @@ body{
      color:  #ffb725;
 }
 
-#log-in{
+.log-in{
      justify-content: center;
      align-items: center;
      flex-direction: column;
@@ -37,4 +37,24 @@ body{
      flex-direction: column;
      justify-content: center;
      align-items: center;
+}
+
+.text-area{
+     text-transform: uppercase;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: 200;
+     font-size: 30px;
+     background-color: black;
+     box-shadow: 0px 0px 50px 3px #03CFFF;
+     animation: pulse ran infinite;
+     color:  #03CFFF;
+     width: 40vw;
+     height: 5vh;
+     max-height: 8vh;
+     resize: none;
+     border-radius: 10px;
+     border-color: #03CFFF;
+     margin-left: 70px;
+     margin-top: 50px;
+     padding: 10px;
 }

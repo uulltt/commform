@@ -1,0 +1,36 @@
+.btn{
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: 200;
+     font-size: 150%;
+     border-color: #03CFFF;
+     background-color: black;
+     box-shadow: 0px 0px 10px 1px #03CFFF;
+     width: 10vw;
+     height: 8vh;
+     color:  #03CFFF;
+     border-radius: 10px;
+     margin-bottom: 30px;
+     margin-left: 30px;
+     transition: all 0.25s ease;
+
+}
+
+.btn:hover{
+     border-color: #ffb725;
+     box-shadow: 0px 0px 10px 1px #ffb725;
+     color:  #ffb725;
+}
+
+#log-in{
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+#sign-up{
+     display: none;
+     visibility: hidden;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
